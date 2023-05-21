@@ -52,7 +52,7 @@ function watching() {
       baseDir: "src/"
     }
   });
-  watch(['src/scss/style.scss'], styles);
+  watch(['src/scss/**/*.scss'], styles);
   watch(['src/js/script.js'], scripts);
   watch(['src/images/src'], images);
   watch(['src/*.html']).on('change', browserSync.reload);
